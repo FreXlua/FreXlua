@@ -35,6 +35,12 @@ function main()
 	    end
 		if isKeyJustPressed(VK_NUMPAD3) then
 			sampSendChat('/newsredak') --”лучшенна€ ловл€ объ€влений
+			setVirtualKeyDown(0x0D, true)
+			wait(110)
+			setVirtualKeyDown(0x0D, false)
+		end
+		if isKeyJustPressed(VK_NUMPAD2) then
+			sampSendChat('/newsredak') --”лучшенна€ ловл€ объ€влений
 		end
 	end
 end
